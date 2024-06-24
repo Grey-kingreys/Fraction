@@ -1,0 +1,64 @@
+#include <iostream>
+#include"Fraction.h"
+
+using namespace std;
+
+int main()
+{
+    fraction *F1 = new fraction(7, 3);
+    fraction *F2 = new fraction(9, 2);
+
+    fraction F;
+
+    F = *F1 + (*F2);
+    cout << "**********************La fraction F1************************" << endl;
+    F1->affiche();
+    cout << "**********************La fraction F2************************" << endl;
+    F2->affiche();
+
+    cout << "***************Les operations entre 2 Fraction**********************" << endl << endl;
+
+
+    cout << "**********************La somme de F1 et F2************************" << endl;
+    F.affiche();
+
+    F= *F1 * (*F2);
+
+    cout << "**********************Le produit de F1 et F2************************" << endl;
+    F.affiche();
+
+    F= *F1 - (*F2);
+
+    cout << "**********************La difference de F1 et F2************************" << endl;
+    F.affiche();
+
+    F= *F1 / (*F2);
+
+    cout << "**********************La divison de F1 et F2************************" << endl;
+    F.affiche();
+
+    cout << "*************Les operations entre une fraction et un nombre************" << endl;
+
+    F = *F1 + (5);
+
+    cout << "**********************La somme de F1 et 5************************" << endl;
+    F.affiche();
+
+    F = *F1 * (5);
+
+    cout << "**********************Le produit de F1 et 5************************" << endl;
+    F.affiche();
+
+    F = *F1 - (5);
+
+    cout << "**********************La difference de F1 et 5************************" << endl;
+    F.affiche();
+
+    F = *F1 /  (5);
+
+    cout << "**********************La division de F1 et 5************************" << endl;
+    F.affiche();
+
+    return 0;
+
+}
